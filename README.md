@@ -1,6 +1,6 @@
 # impact_tutorial
 
-#install rustc
+# install rustc
 
 jika benar benar baru deploy vps maka ikutin langkah berikut: 
 
@@ -58,7 +58,7 @@ nightly-x86_64-unknown-linux-gnu (overridden by +toolchain on the command line)
 rustc 1.65.0-nightly (34a6cae28 2022-08-09)
 ```
 
-#lets go jalanin node nya
+# lets go jalanin node nya
 pertama clone dulu github impact
 ```
 git clone https://github.com/GlobalBoost/impactprotocol
@@ -75,7 +75,7 @@ buat screen dulu khusus untuk node
 ```
 screen -Rd impact
 ```
-#jika distep ini disuruh masukin password, maka isi aja sesuka hati password nya asal ingat saja, disamaain semua saja
+# jika distep ini disuruh masukin password, maka isi aja sesuka hati password nya asal ingat saja, disamaain semua saja
 
 bikin wallet
 ```
@@ -104,10 +104,10 @@ jika sudah jalan maka detach dari screen agar tersimpan
 menggunakan ctrl a + d
 
 
-#jika sudah setup node maka bisa cek nama nodemu di
+# jika sudah setup node maka bisa cek nama nodemu di
 https://telemetry.polkadot.io/#list/0x1133ca761f24222cb0811f34641dba07acd88c77bd9f30a23a99c2cba233cb91
 
-#setting nodemu untuk menjadi validator
+# setting nodemu untuk menjadi validator
 
 siapkan dulu 2 wallet polkadotjs extension, 1 akun biasa, 1 lagi akun import an dari node mu
 untuk stash validator
@@ -122,7 +122,7 @@ https://signal.group/#CjQKICa9F2r95FQoGhYjc02lwNgKZCOfDEZngfoWgr_ZkHc4EhAOywghKv
 
 buat akun, lalu minta faucet untuk kedua wallet polkadotjs diatas
 
-#membuat node menjadi validator
+# membuat node menjadi validator
 buka lagi vps mu lalu
 ```
 curl -H "Content-Type: application/json" -d'{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[ ]}' http://localhost:9933
@@ -146,7 +146,7 @@ lalu klik next (edit komisinya sesukamu)
 jika sudah maka validatormu akan menunggu untuk menjadi aktif
 ![image](https://github.com/BrianBathory98/impact_tutorial/assets/41656124/33f3d8eb-9eff-4916-aca0-0fed4ba04eb5)
 
-#submit data nodemu
+# submit data nodemu
 
 submit data node mu di github impact protocol :
 https://github.com/GlobalBoost/incentivized-testnet/issues
